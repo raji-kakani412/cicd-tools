@@ -10,7 +10,8 @@ terraform {
     bucket         = "devops81s-remote-state"
     key            = "jenkins"
     region         = "us-east-1"
-    dynamodb_table = "81s-locking"
+    #dynamodb_table = "81s-locking"
+    use_lockfile=true
   }
 
 }
